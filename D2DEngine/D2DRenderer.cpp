@@ -86,7 +86,7 @@ void D2DRenderer::Initialize(HWND hWnd)
 		);
 	}
 
-	// VRAM 정보얻기 위한 개체 생성
+	// VRAM 정보얻기 위한 개체 생성  // 
 	if (SUCCEEDED(hr))
 	{
 		// Create DXGI factory
@@ -107,7 +107,7 @@ void D2DRenderer::Uninitialize()
 	SAFE_RELEASE(m_pDWriteFactory);
 	SAFE_RELEASE(m_pDWriteTextFormat);
 	SAFE_RELEASE(m_pDXGIFactory);
-	SAFE_RELEASE(m_pDXGIAdapter);
+	SAFE_RELEASE(m_pDXGIAdapter); // 객체 인터페이스가 필요
 	CoUninitialize();
 }
 
